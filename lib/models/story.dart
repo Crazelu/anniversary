@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:ugo/constants.dart';
 import 'package:ugo/models/story_line.dart';
 
-// 1284
-const _image =
-    "https://raw.githubusercontent.com/Crazelu/anniversary/main/images/screenshot2.png";
-
 class Story {
   final String? image;
   final List<StoryLine> lines;
@@ -18,7 +14,7 @@ class Story {
   static List<Story> stories = [
     Story(
       image:
-          "https://raw.githubusercontent.com/Crazelu/anniversary/main/images/img3.png",
+          "https://raw.githubusercontent.com/Crazelu/anniversary/main/images/img4.png",
       lines: [
         StoryLine.itallic(
           text: "Ugo\n",
@@ -62,7 +58,7 @@ class Story {
           "https://raw.githubusercontent.com/Crazelu/anniversary/main/images/img2.png",
       lines: [
         StoryLine(
-          text: "Center\n",
+          text: "Us\n",
           fontFamily: "Mono",
           letterSpacing: 1,
           fontSize: 20,
@@ -70,7 +66,25 @@ class Story {
           height: 2,
         ),
         StoryLine(
-          text: "I came to a city with no center\n",
+          text: "This picture describes us sometimes.\n",
+        ),
+        StoryLine(
+          text: "Hard/soft. Hot/cold. Passionate/indifferent.\n",
+        ),
+        StoryLine(
+          text: "But we're reminded to remain kind to each other.\n",
+        ),
+        StoryLine(
+          text: "And in doing that, there's no me/you.\n",
+        ),
+        StoryLine(text: "It's just   "),
+        StoryLine(
+          text: "us",
+          letterSpacing: 5,
+          fontSize: 50,
+          color: kPrimaryColor,
+          fontFamily: "Southam",
+          height: 0.3,
         ),
       ],
     ),
