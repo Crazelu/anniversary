@@ -1,0 +1,47 @@
+name: ugo
+description: For Ugo
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+17
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  url_launcher: ^6.1.11
+  animated_text_kit: ^4.2.2
+  cached_network_image: ^3.2.3
+  confetti: ^0.7.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/fonts/
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: "Southam"
+      fonts:
+        - asset: assets/fonts/southam.otf
+    - family: "Mono"
+      fonts:
+        - asset: assets/fonts/MostlyMono.ttf
+    - family: NunitoSans
+      fonts:
+        - asset: assets/fonts/NunitoSans-Regular.ttf
+        - asset: assets/fonts/NunitoSans-Italic.ttf
+          style: italic
+
