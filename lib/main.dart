@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ugo/constants.dart';
 import 'package:ugo/home_page.dart';
-import 'package:ugo/story_page.dart';
 
 void main() {
   runApp(const App());
@@ -75,7 +74,7 @@ class App extends StatelessWidget {
           onSurface: Colors.white,
         ),
       ),
-      home: const StoryPage(),
+      home: const HomePage(),
     );
   }
 }

@@ -71,7 +71,7 @@ class _SwipeIndicatorState extends State<SwipeIndicator>
               color: Colors.white,
             ),
             const Text(
-              "Swipe",
+              "  Swipe",
               style: TextStyle(
                 fontFamily: "Mono",
                 fontSize: 12,

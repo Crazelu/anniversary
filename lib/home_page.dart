@@ -32,9 +32,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         _timer?.cancel();
       });
 
-// 21200
       Future.delayed(
-        const Duration(milliseconds: 0),
+        const Duration(milliseconds: 21200),
         () {
           _controller.forward();
         },

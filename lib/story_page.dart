@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ugo/celebration_page.dart';
 import 'package:ugo/models/story.dart';
+import 'package:ugo/widgets/footer.dart';
 import 'package:ugo/widgets/story_widget.dart';
 import 'package:ugo/widgets/swipe_indicator.dart';
 import 'package:flutter/gestures.dart';
@@ -56,6 +57,11 @@ class _StoryPageState extends State<StoryPage> {
                   const CelebrationPage(),
                 ],
               ),
+            ),
+            const Positioned(
+              bottom: 12,
+              right: 12,
+              child: Footer(),
             ),
             if (!_hideSwipeIndicator)
               const Positioned(

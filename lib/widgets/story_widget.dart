@@ -54,7 +54,7 @@ class StoryWidget extends StatelessWidget {
                   image: DecorationImage(
                     image: imageProvider,
                     fit: BoxFit.cover,
-                    //greyscale filter
+                    //sepia filter
                     colorFilter: const ColorFilter.matrix(
                       <double>[
                         0.393,
@@ -87,31 +87,35 @@ class StoryWidget extends StatelessWidget {
                 Container(
               height: size.height * .4,
               width: size.width,
-              color: Colors.grey.shade100,
+              color: Colors.grey.shade300,
             ),
           ),
           const SizedBox(height: 10),
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Text.rich(
-              TextSpan(
-                children: [
-                  for (var line in story.lines)
-                    TextSpan(
-                      text: line.text,
-                      style: TextStyle(
-                        fontFamily: line.fontFamily,
-                        fontSize: line.fontSize,
-                        fontStyle: line.fontStyle,
-                        fontWeight: line.fontWeight,
-                        color: line.color,
-                        letterSpacing: line.letterSpacing,
-                        height: line.height,
-                      ),
-                    ),
-                ],
-              ),
-              softWrap: true,
+          Expanded(
+            child: ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
+                Text.rich(
+                  TextSpan(
+                    children: [
+                      for (var line in story.lines)
+                        TextSpan(
+                          text: line.text,
+                          style: TextStyle(
+                            fontFamily: line.fontFamily,
+                            fontSize: line.fontSize,
+                            fontStyle: line.fontStyle,
+                            fontWeight: line.fontWeight,
+                            color: line.color,
+                            letterSpacing: line.letterSpacing,
+                            height: line.height,
+                          ),
+                        ),
+                    ],
+                  ),
+                  softWrap: true,
+                ),
+              ],
             ),
           ),
         ],
