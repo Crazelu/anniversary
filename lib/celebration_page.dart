@@ -38,7 +38,7 @@ class _CelebrationPageState extends State<CelebrationPage>
       _confettiController.play();
     });
     Future.delayed(
-      const Duration(milliseconds: 1200),
+      const Duration(milliseconds: 1500),
       () {
         _animationController.forward();
       },

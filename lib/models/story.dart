@@ -86,7 +86,7 @@ class Story {
           text: "you played a pregnant woman.\n",
         ),
         StoryLine(
-          text: "I wished I had front row seats.\n",
+          text: "I wished I had a front row seat.\n",
         ),
         StoryLine(
           text: "You found me later in the pavilion.\n",
